@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divided Page</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+        header, footer {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            color: white;
+            font-size: 3em;
+        }
+        .content {
+            display: flex;
+            flex: 3;
+        }
+        main, aside {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            color: rgb(0, 0, 0);
+            font-size: 3em;
+        }
+        header {
+            background-color: #ff0000;
+        }
+        main {
+            background-color: #98ffab; 
+        }
+        aside {
+            background-color: #3357ff;
+        }
+        footer {
+            background-color: #ff0088;
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <div class="content">
+        <main>Main</main>
+        <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+</body>
+</html>
